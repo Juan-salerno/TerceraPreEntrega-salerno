@@ -1,0 +1,55 @@
+.titulo_sobre_nosotros {
+    text-align: center;
+    font-size: 25px;
+    margin: 50px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.sobre_nosotros {
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        text-align: left;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    & img {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+}
+
+@media (min-width: $bpmedium) {
+    .sobre_nosotros {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        & img {
+            width: 600px;
+            height: 500px;
+        }
+            
+        
+
+    
+    }
+
+
+}
+
+@media (min-width: $bpbig) {
+     .sobre_nosotros p {
+        font-size: 15px;
+     }
+
+     .titulo_sobre_nosotros {
+        font-size: 35px;
+     }
+
+}

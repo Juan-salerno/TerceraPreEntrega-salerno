@@ -1,0 +1,124 @@
+.header_description {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 0px;
+    padding: 5px;
+    background-color: #ECE8DD;
+    font-weight: bold;
+}
+
+.header {
+
+    &__h1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #579BB1;
+        text-align: start;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    &__img {
+        width: 15px;
+        padding-right: 3px;
+    }
+
+    &__navegacion {
+        background-color: #579BB1;
+        margin: 0px;
+        color: #ffffff;
+
+        &-ul {
+            display: none;
+        }
+    }
+
+}
+
+.mobile {
+
+    &__p {
+        background-color: #579BB1;
+        margin: 0px;
+
+        &-icon {
+            width: 20px;
+        }
+    }
+
+    .menu {
+        &__mobile {
+
+            &-ul {
+                background-color: #579BB1;
+                list-style: none;
+
+            }
+
+            &-a {
+                text-decoration: none;
+                color: #000000;
+                padding: 5px;
+            }
+        }
+    }
+
+
+
+}
+
+@media (min-width: $bpsmall) {
+    .header__h1 {
+        font-size: 45px;
+        padding-bottom: 10px;
+    }
+
+    .header_description {
+        font-size: 15px;
+    }
+
+    .header__img {
+        width: 20px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .header__navegacion-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 3px;
+    }
+
+}
+
+@media (min-width: $bpmedium) {
+    .header__h1 {
+        font-size: 50px;
+    }
+
+    .header__img {
+        width: 20px;
+    }
+
+    .header__navegacion-ul {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: $bpbig) {
+    .header__h1 {
+        font-size: 60px;
+    }
+
+    .header__img {
+        width: 25px;
+    }
+
+}
